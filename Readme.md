@@ -24,6 +24,7 @@
   - [liquor](https://github.com/chjj/liquor)
   - [lodash](https://github.com/bestiejs/lodash) [(website)](http://lodash.com/)
   - [mustache](https://github.com/janl/mustache.js)
+  - [nunjucks](https://mozilla.github.io/nunjucks)
   - [QEJS](https://github.com/jepso/QEJS)
   - [ractive](https://github.com/Rich-Harris/Ractive)
   - [swig](https://github.com/paularmstrong/swig) [(website)](http://paularmstrong.github.com/swig/)
@@ -31,7 +32,7 @@
   - [toffee](https://github.com/malgorithms/toffee)
   - [underscore](https://github.com/documentcloud/underscore) [(website)](http://documentcloud.github.com/underscore/)
   - [walrus](https://github.com/jeremyruppel/walrus) [(website)](http://documentup.com/jeremyruppel/walrus/)
-  - [whiskers](https://github.com/gsf/whiskers.js/tree/)
+  - [whiskers](https://github.com/gsf/whiskers.js)
 
 __NOTE__: you must still install the engines you wish to use, add them to your package.json dependencies.
 
@@ -118,6 +119,12 @@ app.get('/users', function(req, res){
 app.listen(3000);
 console.log('Express server listening on port 3000');
 ```
+
+## Notes
+
+* You can pass **partials** with `options.partials`
+* For using **template inheritance** with nunjucks, you can pass a loader
+  with `options.loader`.
 
 ## Running tests
 
